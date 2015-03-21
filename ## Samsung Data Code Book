@@ -1,0 +1,114 @@
+## Code book for Samsung tidy table
+
+Intro
+
+This data is derived from a much larger set of 563 different motion measurements taken from a Samsung phone carried by 30 subjects during an experiment to distinguish and predict six types activity. 
+
+In this subset, 79 variables that recorded the mean or standard deviation for that measurement are included. Mean values for each variable are reported by subject and activity.
+
+For example, Column 3 reports the mean standard deviation of 't-bodyacc-std-x' for subject 1 and the activity 'standing'.  
+
+The variable names are fine-tuned to represent the variety of different measurements and their source. Further details can be found at:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+
+Data dictionary
+
+Vars 1-2
+
+ [1] "subject"                       
+ 		factor, 1-30, for each of 30 subjets
+ 
+ [2] "activity" 
+        factor, for each of 6 activities: "standing", "sitting", "laying", "walking", "walking downstairs", "walking upstairs"   
+ 
+Vars 3-22
+	These numeric variables represent time domain signals (prefix 't') that captured body and gravity acceleration from the accelerometer (acc) and gyroscope (gyro). x, y and z indicate the dimension of motion. 'jerk' is a derived measurment of angular velocity and body linear acceleration.
+
+ 
+ [3] "t-bodyacc-std-x"               
+ [4] "t-bodyacc-std-y"               
+ [5] "t-bodyacc-std-z"               
+ [6] "t-gravityacc-std-x"            
+ [7] "t-gravityacc-std-y"            
+ [8] "t-gravityacc-std-z"            
+ [9] "t-bodyaccjerk-std-x"           
+[10] "t-bodyaccjerk-std-y"           
+[11] "t-bodyaccjerk-std-z"           
+[12] "t-bodygyro-std-x"              
+[13] "t-bodygyro-std-y"              
+[14] "t-bodygyro-std-z"              
+[15] "t-bodygyrojerk-std-x"          
+[16] "t-bodygyrojerk-std-y"          
+[17] "t-bodygyrojerk-std-z"          
+[18] "t-bodyaccmag-std"              
+[19] "t-gravityaccmag-std"           
+[20] "t-bodyaccjerkmag-std"          
+[21] "t-bodygyromag-std"             
+[22] "t-bodygyrojerkmag-std"         
+
+
+Vars 23-81
+
+	These numeric variables, prefixed with 'f', report measurements that have been transformed iwth a Fast Fourier Transform (FFT) and were used to estimate each activity pattern.
+
+[23] "f-bodyacc-std-x"               
+[24] "f-bodyacc-std-y"               
+[25] "f-bodyacc-std-z"               
+[26] "f-bodyaccjerk-std-x"           
+[27] "f-bodyaccjerk-std-y"           
+[28] "f-bodyaccjerk-std-z"           
+[29] "f-bodygyro-std-x"              
+[30] "f-bodygyro-std-y"              
+[31] "f-bodygyro-std-z"              
+[32] "f-bodyaccmag-std"              
+[33] "f-bodybodyaccjerkmag-std"      
+[34] "f-bodybodygyromag-std"         
+[35] "f-bodybodygyrojerkmag-std"     
+[36] "t-bodyacc-mean-x"              
+[37] "t-bodyacc-mean-y"              
+[38] "t-bodyacc-mean-z"              
+[39] "t-gravityacc-mean-x"           
+[40] "t-gravityacc-mean-y"           
+[41] "t-gravityacc-mean-z"           
+[42] "t-bodyaccjerk-mean-x"          
+[43] "t-bodyaccjerk-mean-y"          
+[44] "t-bodyaccjerk-mean-z"          
+[45] "t-bodygyro-mean-x"             
+[46] "t-bodygyro-mean-y"             
+[47] "t-bodygyro-mean-z"             
+[48] "t-bodygyrojerk-mean-x"         
+[49] "t-bodygyrojerk-mean-y"         
+[50] "t-bodygyrojerk-mean-z"         
+[51] "t-bodyaccmag-mean"             
+[52] "t-gravityaccmag-mean"          
+[53] "t-bodyaccjerkmag-mean"         
+[54] "t-bodygyromag-mean"            
+[55] "t-bodygyrojerkmag-mean"        
+[56] "f-bodyacc-mean-x"              
+[57] "f-bodyacc-mean-y"              
+[58] "f-bodyacc-mean-z"              
+[59] "f-bodyacc-meanfreq-x"          
+[60] "f-bodyacc-meanfreq-y"          
+[61] "f-bodyacc-meanfreq-z"          
+[62] "f-bodyaccjerk-mean-x"          
+[63] "f-bodyaccjerk-mean-y"          
+[64] "f-bodyaccjerk-mean-z"          
+[65] "f-bodyaccjerk-meanfreq-x"      
+[66] "f-bodyaccjerk-meanfreq-y"      
+[67] "f-bodyaccjerk-meanfreq-z"      
+[68] "f-bodygyro-mean-x"             
+[69] "f-bodygyro-mean-y"             
+[70] "f-bodygyro-mean-z"             
+[71] "f-bodygyro-meanfreq-x"         
+[72] "f-bodygyro-meanfreq-y"         
+[73] "f-bodygyro-meanfreq-z"         
+[74] "f-bodyaccmag-mean"             
+[75] "f-bodyaccmag-meanfreq"         
+[76] "f-bodybodyaccjerkmag-mean"     
+[77] "f-bodybodyaccjerkmag-meanfreq" 
+[78] "f-bodybodygyromag-mean"        
+[79] "f-bodybodygyromag-meanfreq"    
+[80] "f-bodybodygyrojerkmag-mean"    
+[81] "f-bodybodygyrojerkmag-meanfreq"
